@@ -1,0 +1,30 @@
+@import "_variables";
+@import "_esfera";
+
+* {
+	box-sizing : border-box;
+}
+
+.container {
+	background: white;
+	.esfera{
+		background: $color-esfera;
+		border-radius: $base-tamanio-esfera/2;
+		height: $base-tamanio-esfera;
+		width: $base-tamanio-esfera;
+		padding: $base-tamanio-esfera/4;
+	}
+	.estrella-1{
+		@include star;
+	}
+	.estrella-2{
+		@include star(20px);
+	}
+	.estrella-3{
+		@include star(15px);
+	}
+
+
+}
+
+
